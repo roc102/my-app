@@ -1,13 +1,7 @@
-import React from "react";
-import UserProfile from "./User/UserProfile";
-import "./App.css";
+import React, { useState } from "react";
 
 const App = () => {
-  return (
-    <>
-      <UserProfile />
-    </>
-  );
+  return <button>Click Me!</button>;
 };
 
 export default App;
