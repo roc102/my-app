@@ -1,7 +1,16 @@
 import React, { useState } from "react";
 
 const App = () => {
-  return <button>Click Me!</button>;
+  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  return (
+    <>
+      {isLoggedIn ? (
+        <p>Welcome, John!</p>
+      ) : (
+        <button onClick={() => setIsLoggedIn(true)}>Login</button>
+      )}
+    </>
+  );
 };
 
 export default App;
