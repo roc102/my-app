@@ -1,3 +1,6 @@
+body{
+  background: linear-gradient(to right, rgb(255, 0, 234), rgb(0, 255, 225));;
+}
 
 .center {
   display: flex;
@@ -30,4 +33,14 @@ button {
   border: none;
   border-radius: 3px;
   cursor: pointer;
+}
+
+.error-page {
+  background-image: url('https://raw.githubusercontent.com/roc102/BookMyShow-clone/19953e5027dadb2cbec53a459ef1eb3d04577be5/src/Screenshots/404.png');
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+
+  width: 100vw;
+  
 }

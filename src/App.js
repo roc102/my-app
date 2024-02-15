@@ -1,37 +1,19 @@
-import React, { useEffect, useState } from "react";
+//  Home, LoginForm, ErrorPage ( Routes )
+
+import React from "react";
+import { Route, Routes } from "react-router-dom";
+import Home from "./Home/Home";
+import LoginForm from "./LoginForm/LoginForm";
+import ErrorPage from "./404/404";
 
 const App = () => {
-  const [data, setData] = useState([]);
-
-  useEffect(() => {
-    fetch("https://jsonplaceholder.typicode.com/posts")
-      .then((response) => {
-        response.json();
-        console.log(response);
-      })
-      .then((data) => setData(data));
-  }, []);
-
-  return <div>App</div>;
-};
-
-export default App;
-
-/*
-import React, { useState } from "react";
-
-const App = () => {
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
   return (
-    <>
-      {isLoggedIn ? (
-        <p>Welcome, John!</p>
-      ) : (
-        <button onClick={() => setIsLoggedIn(true)}>Login</button>
-      )}
-    </>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/login" element={<LoginForm />} />
+      <Route path="*" element={<ErrorPage />} />
+    </Routes>
   );
 };
 
 export default App;
-*/
