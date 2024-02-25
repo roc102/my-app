@@ -9,8 +9,6 @@ import ErrorPage from "./404/404";
 const App = () => {
   return (
     <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/login" element={<LoginForm />} />
       <Route path="*" element={<ErrorPage />} />
     </Routes>
   );
