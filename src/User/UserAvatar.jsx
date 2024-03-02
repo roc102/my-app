@@ -2,11 +2,11 @@ import React from "react";
 
 const UserAvatar = (props) => {
   return (
-    <>
+    <div>
       <h1>UserAvatar</h1>
-      <h2>Child Component</h2>
-      <p>profile pic: {props.url}</p>
-    </>
+      <p>Profile Pic: {props.url} </p>
+      <p>Bio: {props.bio}</p>
+    </div>
   );
 };
 
